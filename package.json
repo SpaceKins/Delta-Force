@@ -4,6 +4,7 @@
   "description": "[Events and Emitters - Slides](http://slides.com/theremix/events-and-emitters)",
   "main": "index.js",
   "scripts": {
+    "timertest": "mocha 'lib/BasicTimer.spec.js'",
     "test": "mocha 'lib/*.spec.js'",
     "watch": "mocha 'lib/*.spec.js'",
     "start": "node index.js",

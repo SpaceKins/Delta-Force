@@ -7,5 +7,5 @@ thisTimer.on('tick',function(){console.log('tick-tock'); count++;});  //+ JSON.s
 thisTimer.on('start',function(startTime){console.log('Start at ' + startTime);});
 thisTimer.on('stop',function(stopTime){console.log('Stopped at ' + stopTime);});  
 
-setTimeout(thisTimer.startTimer,5000);
-setTimeout(thisTimer.stopTimer,8000);
+setTimeout(function(){thisTimer.startTimer();},5000);
+setTimeout(thisTimer.stopTimer,15000);
