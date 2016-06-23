@@ -7,7 +7,7 @@ thisTimer.on('tick',function(tickCount){console.log('tick-tock ' + tickCount ); 
 thisTimer.on('start',function(startTime){console.log('Start at ' + startTime);});
 thisTimer.on('stop',function(stopTime){console.log('Stopped at ' + stopTime);});  
 thisTimer.on('complete',function(durationTime){console.log('Duration ' + durationTime);});  
+thisTimer.on('lag',function(lagTime){console.log('Lag Time ' + lagTime);});  
 
-
-setTimeout(function(){thisTimer.startTimer();},5000);
+setTimeout(function(){thisTimer.startTimer(10,30);},5000);
 setTimeout(thisTimer.stopTimer,15000);
